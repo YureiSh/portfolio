@@ -1,6 +1,9 @@
 import BasicInfo from "./profile-components/BasicInfo";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { useContext } from "react";
 
 const Profile = () => {
+    const {t} = useContext(LanguageContext);
     return (
         <>
             <section className="bg-hero-blue pb-10">
@@ -11,7 +14,7 @@ const Profile = () => {
                         <div className="flex flex-wrap gap-12 justify-between">
 
                             <div className="lg:w-1/4 sm:w-1/2 w-full">
-                                <h2 className="text-[2.5rem] pb-8">Basic Information</h2>
+                                <h2 className="text-[2.5rem] pb-8">{t.basicInformation}</h2>
                                 <BasicInfo />
                             </div>
 
@@ -20,10 +23,9 @@ const Profile = () => {
                             </div>
 
                             <div className="lg:w-1/4 w-full">
-                                <h2 className="text-[2.5rem] pb-8">About Me</h2>
-                                <p className="text-2xl">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.
-                                    <br /> Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!
+                                <h2 className="text-[2.5rem] pb-8">{t.aboutMe}</h2>
+                                <p className="text-2xl whitespace-pre-line">
+                                    {t.aboutMeText}
                                 </p>
                             </div>
 

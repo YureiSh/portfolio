@@ -1,3 +1,6 @@
+import { LanguageContext } from "../contexts/LanguageContext";
+import { useContext } from "react";
+
 const data = [
     {
         src: "js-logo.svg",
@@ -22,13 +25,13 @@ const data = [
 
 
 const Skills = () => {
+    const { t, language } = useContext(LanguageContext);
 
     return (
         <>
             <section className="padding-opt pb-15">
                 <div className="flex flex-col md:flex-row pt-10">
-                    <h1 className="w-5/12 pb-10 md:pb-0 text-6xl font-bold text-hero-blue">Skills</h1>
-
+                    <h1 className={`w-5/12 pb-10 md:pb-0 font-bold text-hero-blue ${language === "tr" ? "text-4xl md:text-5xl" : "text-6xl"}`}>{t.skillsH1}</h1>
                     <div className="flex flex-wrap">
                         {data.map((item) => (
                             <div key={item.src} className="w-1/3 md:w-1/2 flex flex-col md:flex-row items-center gap-6 mb-12 ">

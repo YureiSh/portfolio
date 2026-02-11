@@ -16,6 +16,13 @@ html {
     padding-bottom: 1rem;
 }
 
+.padding-opt-header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+    padding-bottom: 1rem;
+}
+
 
 :root {
     font-family: "Inter", sans-serif;
@@ -44,6 +51,7 @@ html {
 @theme {
     --color-hero-blue: #3f35ff;
     --color-hero-lime: #c8f06a;
+    --breakpoint-sl: 25rem;
 }
 
 .hero-button {

@@ -1,11 +1,13 @@
 import HeroHeader from "./HeroHeader";
 import HeroMain from "./HeroMain";
-
+import { useContext } from "react";
+import { LanguageContext } from "../../contexts/LanguageContext";
 
 const Hero = () => {
+    const { language } = useContext(LanguageContext);
     return (
         <>
-            <section className="h-265 md:h-184 bg-hero-split">
+            <section className={`${language === "tr" ? "md:h-148":"md:h-164"} h-265  bg-hero-split`}>
                 <HeroHeader/>
                 <HeroMain/>
             </section>
