@@ -9,11 +9,11 @@ const BasicInfo = () => {
     return (
         <div className="space-y-3">
             {Object.entries(data).map(([label, value]) => (
-                <div key={label} className="flex gap-4">
-                    <p className="text-hero-lime text-2xl w-50">{label}</p>
-                    <p className="text-2xl text-gray-200">
+                <div key={label} className="flex justify-start lg:justify-start gap-10">
+                    <p className="text-hero-lime text-2xl w-max-[200px] md:w-max-[1000px] ">{label}</p>
+                    <p className="text-2xl text-gray-200 text-start w-min-[250px] ">
                         {Array.isArray(value) ? value.map((line, i) =>
-                            (<span key={i}>{line}<br /></span>)) : value}
+                            (<span className="text-start" key={i}>{line}<br /></span>)) : value}
                     </p>
                 </div>
             ))}

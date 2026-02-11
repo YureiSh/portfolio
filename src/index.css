@@ -2,17 +2,26 @@
 
 body,
 html {
-  background-color: #FAF7F2;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+    background-color: #FAF7F2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.padding-opt {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    padding-bottom: 1rem;
 }
 
 
-:root{
+:root {
     font-family: "Inter", sans-serif;
 }
+
+@import "tailwindcss";
 
 @layer utilities {
     .bg-hero-split {
@@ -22,12 +31,14 @@ html {
                 #c8f06a 75%,
                 #c8f06a 100%);
     }
-}
 
-@layer base {
-  h1 { @apply text-6xl md:text-2xl; }
-  h2 { @apply text-[2.5rem] md:text-xl; }
-  p  { @apply text-2xl md:text-base; }
+    @media (max-width: 768px) {
+        .bg-hero-split {
+            background-image: linear-gradient(to right,
+                    #3f35ff 0%,
+                    #3f35ff 100%);
+        }
+    }
 }
 
 @theme {
