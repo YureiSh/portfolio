@@ -13,7 +13,7 @@ const HeroMain = () => {
                     <h2 className="text-2xl pb-9 text-hero-lime whitespace-pre-line " >{t.heroH2}</h2>
                     <div className="flex justify-center md:justify-start gap-5">
                         <a className="hero-button" href="https://github.com/YureiSh" >GitHub</a>
-                        <a className="hero-button" href="https://www.linkedin.com/notifications/?filter=all" >Linkedin</a>
+                        <a className="hero-button" href="https://www.linkedin.com/in/enis-ata-erkol-2b72b9231/" >Linkedin</a>
                     </div>
                 </div>
                 <div className="pt-12 md:pt-0" >
