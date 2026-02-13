@@ -6,7 +6,7 @@ const Profile = () => {
     const {t} = useContext(LanguageContext);
     return (
         <>
-            <section className="bg-hero-blue pb-10">
+            <section className="bg-hero-blue-nec pb-10">
                 <div className="padding-opt text-white">
                     <div className="pt-8">
                         <h1 className="text-6xl font-bold text-hero-lime pb-10">Profile</h1>
@@ -19,7 +19,7 @@ const Profile = () => {
                             </div>
 
                             <div className="lg:w-1/4 sm:w-1/3 w-full flex justify-center ">
-                                <img className="" src="/vite.svg" alt="" width="300" height="300" />
+                                <img className="rounded-2xl " src="/me/about-me.jpeg" alt="" width="300" height="300" />
                             </div>
 
                             <div className="lg:w-1/4 w-full">

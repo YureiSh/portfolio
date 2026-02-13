@@ -40,7 +40,7 @@ const Skills = () => {
                                     src={`/logo/${item.src}`}
                                     alt={item.title}
                                 />
-                                <p className="text-gray-400 text-xl md:text-3xl tracking-wide max-w-37.5">
+                                <p className="text-hero-yrm text-xl md:text-3xl tracking-wide max-w-37.5">
                                     {item.title}
                                 </p>
                             </div>

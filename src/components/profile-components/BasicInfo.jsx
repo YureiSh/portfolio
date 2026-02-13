@@ -4,10 +4,10 @@ import { LanguageContext } from "../../contexts/LanguageContext";
 const BasicInfo = () => {
     const { t } = useContext(LanguageContext);
     const data = {
-        birthDay: "24.03.1996",
-        location: "Ankara",
-        education: ["Hacettepe Ünv. Biyoloji", "BSc, 2016"],
-        position: "Frontend UI",
+        birthDay: "20.07.2002",
+        location: "İstanbul",
+        education: ["KadirHas Ünv. Elektrik-Elektronik Mühendisliği", "BSc, 2020"],
+        position: "Frontend, FullStack",
     };
 
     return (

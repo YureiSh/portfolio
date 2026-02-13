@@ -7,8 +7,9 @@ import Contacts from './components/Contacts'
 import useLocalStorage from './hooks/useLocalStorage'
 import { ThemeContext } from './contexts/ThemeContext'
 import { LanguageContext } from './contexts/LanguageContext'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { textData } from './textData'
+import axios from 'axios'
 
 function App() {
   const [darkMode, setDarkMode] = useLocalStorage('s11d3', false);
@@ -23,11 +24,18 @@ function App() {
     setLanguage((prev) => (prev == "tr" ? "en" : "tr"));
   };
 
+  useEffect(() => {
+    if(localStorage.getItem('s11d3')) return;
+    axios.post("https://698ef374aded595c25334ab7.mockapi.io/api/v1/languageText", textData)
+      .then((res) => console.log(res.data))
+      .catch(err => console.log(err));
+  }, []);
+
   return (
     <>
       <ThemeContext.Provider value={{ darkMode, handleToggle }}>
         <LanguageContext.Provider value={{ language, handleLanguageToggle, t: textData[language] }}>
-          <main className={`${darkMode ? "bg-slate-900" : "bg-white"}`}>
+          <main className={`${darkMode ? "bg-[#252128] dark" : "bg-white"}`}>
             <Hero />
             <Skills />
             <Profile />
@@ -45,8 +53,8 @@ export default App
 (x)Genel Tasarım
 (x)Responsiveness
 
-() Dark mode
-() TÜRKÇE-İNGİLİZCE
-() Sahte API
+(x) Dark mode
+(x) TÜRKÇE-İNGİLİZCE
+() Sahte API reqres ile halledicez
 */
 

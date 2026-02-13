@@ -30,35 +30,51 @@ html {
 
 @import "tailwindcss";
 
-@layer utilities {
-    .bg-hero-split {
-        background-image: linear-gradient(to right,
-                #3f35ff 0%,
-                #3f35ff 75%,
-                #c8f06a 75%,
-                #c8f06a 100%);
-    }
-
-    @media (max-width: 768px) {
-        .bg-hero-split {
-            background-image: linear-gradient(to right,
-                    #3f35ff 0%,
-                    #3f35ff 100%);
-        }
-    }
-}
-
 @theme {
+    --color-hero-white: #FFFFFF;
     --color-hero-blue: #3f35ff;
     --color-hero-lime: #c8f06a;
+    --color-hero-yrm:#252128;
+    --color-hero-blue-nec: #3f35ff;
+    --color-hero-lime-nec: #c8f06a;
     --breakpoint-sl: 25rem;
+}
+
+@layer utilities {
+  .bg-hero-split {
+    background-image: linear-gradient(
+      to right,
+      var(--color-hero-blue-nec) 0%,
+      var(--color-hero-blue-nec) 75%,
+      var(--color-hero-lime-nec) 75%,
+      var(--color-hero-lime-nec) 100%
+    );
+  }
+
+  @media (max-width: 768px) {
+    .bg-hero-split {
+      background-image: linear-gradient(
+        to right,
+        var(--color-hero-blue-nec) 0%,
+        var(--color-hero-blue-nec) 100%
+      );
+    }
+  }
 }
 
 .hero-button {
     padding: 12px 20px 12px 12px;
-    background-color: white;
+    background-color: var(--color-hero-white);
     border-radius: 0.75rem;
     border: 1px solid var(--color-hero-blue);
     font-size: 1.25rem;
     color: var(--color-hero-blue);
+}
+
+.dark {
+    --color-hero-blue:#c8f06a;
+    --color-hero-white:#252128;
+    --color-hero-yrm:#FFFFFF;
+    --color-hero-blue-nec:#171043;
+    --color-hero-lime-nec: #1A210B;
 }

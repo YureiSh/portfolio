@@ -17,7 +17,7 @@ const HeroMain = () => {
                     </div>
                 </div>
                 <div className="pt-12 md:pt-0" >
-                    <img src="../public/vite.svg" alt="Girl in a jacket" width="350" height="375" />
+                    <img className="rounded-2xl w-80" src="/me/me-hero.jpeg" alt="Girl in a jacket" width="350" height="375" />
                 </div>
             </div>
         </>

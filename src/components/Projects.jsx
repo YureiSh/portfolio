@@ -7,7 +7,7 @@ const Projects = () => {
 
     return(
     <>
-    <section className=" bg-hero-lime pt-10 shadow-md">
+    <section className=" bg-hero-lime-nec pt-10 shadow-md">
         <div className="padding-opt ">
             <h1 className="text-6xl font-bold text-hero-blue pb-10" >{t.projects}</h1>
             <Project/>
