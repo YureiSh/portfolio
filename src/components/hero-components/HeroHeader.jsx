@@ -15,7 +15,7 @@ const HeroHeader = () => {
                 <div className="text-2xl flex gap-16 pt-10 md:pt-0 pb-0 md:pb-8 order-1 md:order-2">
                     <button
                     onClick={()=>handleLanguageToggle()} 
-                    className="text-hero-lime font-bold text-xl">{t.toggleButton}</button>
+                    className="text-hero-lime font-bold text-xl px-10 md:px-20">{t.toggleButton}</button>
                     <div className="flex flex-row gap-4">
                         <Toggle/>
                         <span className="font-bold text-xl text-hero-lime md:text-hero-blue">DARK MODE</span>

@@ -9,7 +9,7 @@ const data = [{
     title: "SPA-Teknolojik Yemekler",
     description_tr: "Teknolojik yemekler projemi kullanıcının belli sipariş seçenekleriyle yemek seçebildiği çoğaltılabilir bir site tasarımı ile tamamladım. Sayfamızın üzerinden pizza sipariş verip, belirli api call'u ile sipariş seçeneklerini ulaştırabiliriz.",
     description_en: "I completed my technological meals project by designing a scalable website where users can select meals with specific order options. Through our page, users can place pizza orders and send their order preferences via a specific API call.",
-    languages: ["HTML5", "JS", "CSS", "REST-API"],
+    languages: ["React", "JavaScript", "Tailwind-CSS", "REST-API"],
     links: [
         { github: "https://github.com/YureiSh/fsweb-s8-challenge-pizza", site: "#1" }
     ]
@@ -19,7 +19,7 @@ const data = [{
     title: "Seesaw with physics",
     description_en: "I added realistic physics and its calculations for a simple seesaw. Its simply click and use, get bored and reset try other possibilities type of project. It is fun you can try.",
     description_tr: "Basit bir tahterevalli için gerçekçi fizik ve hesaplamalar ekledim. Sadece tıklayıp kullanabileceğin, sıkıldıkça sıfırlayıp farklı olasılıkları deneyebileceğin bir proje. Eğlenceli, denemelisiniz.",
-    languages: ["JS", "HTML5", "CSS"],
+    languages: ["JavaScript", "HTML5", "CSS"],
     links: [
         { github: "https://github.com/YureiSh/seesaw-simulation-byEnis-Ata-Erkol", site: "https://yureish.github.io/seesaw-simulation-byEnis-Ata-Erkol/" }
     ]
@@ -34,7 +34,7 @@ const Project = () => {
             {data.map((item, index) => (
                 <div key={`${item.title}-${index}`} className={` ${darkMode ? "bg-[#252128] text-white" : "bg-white" } rounded-md shadow-2xl flex flex-col items-center md:flex-row gap-6 `} >
                     <div className="w-93.75 h-93.75 flex justify-center">
-                        <img className="rounded-2xl py-2 px-2" src={item.image} alt={item.title} width="360" height="360" />
+                        <img className="rounded-2xl py-2 px-2 object-cover" src={item.image} alt={item.title} width="400" height="400" />
 
                     </div>
                     <div className="md:w-2/3 w-full py-4 px-4 flex flex-col gap-y-6">
