@@ -24,26 +24,7 @@ const data = [{
         { github: "https://github.com/YureiSh/seesaw-simulation-byEnis-Ata-Erkol", site: "https://yureish.github.io/seesaw-simulation-byEnis-Ata-Erkol/" }
     ]
 },
-{
-    image: "/projects/project-1.png",
-    title: "Seesaw with physics",
-    description_en: "I added realistic physics and its calculations for a simple seesaw. Its simply click and use, get bored and reset try other possibilities type of project. It is fun you can try.",
-    description_tr: "Basit bir tahterevalli için gerçekçi fizik ve hesaplamalar ekledim. Sadece tıklayıp kullanabileceğin, sıkıldıkça sıfırlayıp farklı olasılıkları deneyebileceğin bir proje. Eğlenceli, denemelisiniz.",
-    languages: ["JS", "HTML5", "CSS"],
-    links: [
-        { github: "https://github.com/YureiSh/seesaw-simulation-byEnis-Ata-Erkol", site: "https://yureish.github.io/seesaw-simulation-byEnis-Ata-Erkol/" }
-    ]
-},
-{
-    image: "/projects/project-1.png",
-    title: "Seesaw with physics",
-    description_en: "I added realistic physics and its calculations for a simple seesaw. Its simply click and use, get bored and reset try other possibilities type of project. It is fun you can try.",
-    description_tr: "Basit bir tahterevalli için gerçekçi fizik ve hesaplamalar ekledim. Sadece tıklayıp kullanabileceğin, sıkıldıkça sıfırlayıp farklı olasılıkları deneyebileceğin bir proje. Eğlenceli, denemelisiniz.",
-    languages: ["JS", "HTML5", "CSS"],
-    links: [
-        { github: "https://github.com/YureiSh/seesaw-simulation-byEnis-Ata-Erkol", site: "https://yureish.github.io/seesaw-simulation-byEnis-Ata-Erkol/" }
-    ]
-}
+
 ]
 
 const Project = () => {
