@@ -9,7 +9,7 @@ const data = [{
     title: "SPA-Teknolojik Yemekler",
     description_tr: "Teknolojik yemekler projemi kullanıcının belli sipariş seçenekleriyle yemek seçebildiği çoğaltılabilir bir site tasarımı ile tamamladım. Sayfamızın üzerinden pizza sipariş verip, belirli api call'u ile sipariş seçeneklerini ulaştırabiliriz.",
     description_en: "I completed my technological meals project by designing a scalable website where users can select meals with specific order options. Through our page, users can place pizza orders and send their order preferences via a specific API call.",
-    languages: ["React", "JavaScript", "Tailwind-CSS", "REST-API"],
+    languages: ["React", "JS", "Tailwind", "REST-API"],
     links: [
         { github: "https://github.com/YureiSh/fsweb-s8-challenge-pizza", site: "#1" }
     ]
@@ -19,7 +19,27 @@ const data = [{
     title: "Seesaw with physics",
     description_en: "I added realistic physics and its calculations for a simple seesaw. Its simply click and use, get bored and reset try other possibilities type of project. It is fun you can try.",
     description_tr: "Basit bir tahterevalli için gerçekçi fizik ve hesaplamalar ekledim. Sadece tıklayıp kullanabileceğin, sıkıldıkça sıfırlayıp farklı olasılıkları deneyebileceğin bir proje. Eğlenceli, denemelisiniz.",
-    languages: ["JavaScript", "HTML5", "CSS"],
+    languages: ["JS", "HTML5", "CSS"],
+    links: [
+        { github: "https://github.com/YureiSh/seesaw-simulation-byEnis-Ata-Erkol", site: "https://yureish.github.io/seesaw-simulation-byEnis-Ata-Erkol/" }
+    ]
+},
+{
+    image: "/projects/project-1.png",
+    title: "Seesaw with physics",
+    description_en: "I added realistic physics and its calculations for a simple seesaw. Its simply click and use, get bored and reset try other possibilities type of project. It is fun you can try.",
+    description_tr: "Basit bir tahterevalli için gerçekçi fizik ve hesaplamalar ekledim. Sadece tıklayıp kullanabileceğin, sıkıldıkça sıfırlayıp farklı olasılıkları deneyebileceğin bir proje. Eğlenceli, denemelisiniz.",
+    languages: ["JS", "HTML5", "CSS"],
+    links: [
+        { github: "https://github.com/YureiSh/seesaw-simulation-byEnis-Ata-Erkol", site: "https://yureish.github.io/seesaw-simulation-byEnis-Ata-Erkol/" }
+    ]
+},
+{
+    image: "/projects/project-1.png",
+    title: "Seesaw with physics",
+    description_en: "I added realistic physics and its calculations for a simple seesaw. Its simply click and use, get bored and reset try other possibilities type of project. It is fun you can try.",
+    description_tr: "Basit bir tahterevalli için gerçekçi fizik ve hesaplamalar ekledim. Sadece tıklayıp kullanabileceğin, sıkıldıkça sıfırlayıp farklı olasılıkları deneyebileceğin bir proje. Eğlenceli, denemelisiniz.",
+    languages: ["JS", "HTML5", "CSS"],
     links: [
         { github: "https://github.com/YureiSh/seesaw-simulation-byEnis-Ata-Erkol", site: "https://yureish.github.io/seesaw-simulation-byEnis-Ata-Erkol/" }
     ]

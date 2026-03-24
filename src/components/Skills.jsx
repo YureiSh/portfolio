@@ -1,10 +1,12 @@
 import { LanguageContext } from "../contexts/LanguageContext";
 import { useContext } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const data = [
     {
         src: "js-logo.svg",
-        title: "JAVASCRIPT"
+        title: "JS"
     }, {
         src: "node-logo.svg",
         title: "NODE"
@@ -25,7 +27,14 @@ const data = [
 
 
 const Skills = () => {
+
     const { t, language } = useContext(LanguageContext);
+
+    useGSAP(()=>{
+        const tl = gsap.timeline();
+        tl.from("#skillImgs", {x:-100, duration: 1, ease:"power1.inOut", opacity:0});
+
+    },[t])
 
     return (
         <>
@@ -36,6 +45,7 @@ const Skills = () => {
                         {data.map((item) => (
                             <div key={item.src} className="w-1/3 md:w-1/2 flex flex-col md:flex-row items-center gap-6 mb-12 ">
                                 <img
+                                    id="skillImgs"
                                     className="rounded-md object-contain w-20 h-20 md:w-30 md:h-30"
                                     src={`/logo/${item.src}`}
                                     alt={item.title}

@@ -1,7 +1,7 @@
 export const textData = {
     tr:{
         toggleButton: "SWITCH TO ENGLISH",
-        heroH1: "Frontend\nDeveloper", //whitespace-pre-line
+        heroH1: "Yazılım\nMühendisi", //whitespace-pre-line
         heroH2: "…ölçeklenebilir ve sağlam frontend ürünleri\nharika kullanıcı deneyimleriyle üretmeyi seven biri.",
         skillsH1: "Yeteneklerim",
         ProfileH1: "Profil",
@@ -19,7 +19,7 @@ export const textData = {
     },
     en:{
         toggleButton: "TÜRKÇE'YE GEÇ",
-        heroH1: "I am a Frontend\nDeveloper",
+        heroH1: "I am a Software\nEngineer",
         heroH2: "...who likes to craft solid and scalable frontend\nproducts with great user experiences.",
         skillsH1: "Skills",
         ProfileH1: "Profile",
