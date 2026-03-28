@@ -31,14 +31,20 @@ const Skills = () => {
     const { t, language } = useContext(LanguageContext);
 
     useGSAP(()=>{
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({
+            scrollTrigger:{
+                trigger: '#skillsSec',
+                start: 'top 60%'
+            }
+        });
         tl.from("#skillImgs", {x:-100, duration: 1, ease:"power1.inOut", opacity:0});
+        tl.from("#skillTexts", {x:-100, duration: 1, ease:"power1.inOut", opacity:0},0.5)
 
     },[t])
 
     return (
         <>
-            <section className="padding-opt pb-15">
+            <section id="skillsSec" className="padding-opt pb-15">
                 <div className="flex flex-col md:flex-row pt-10">
                     <h1 className={`w-5/12 pb-10 md:pb-0 font-bold text-hero-blue ${language === "tr" ? "text-4xl md:text-5xl" : "text-6xl"}`}>{t.skillsH1}</h1>
                     <div className="flex flex-wrap">
@@ -50,7 +56,7 @@ const Skills = () => {
                                     src={`/logo/${item.src}`}
                                     alt={item.title}
                                 />
-                                <p className="text-hero-yrm text-xl md:text-3xl tracking-wide max-w-37.5">
+                                <p id="skillTexts" className="text-hero-yrm text-xl md:text-3xl tracking-wide max-w-37.5">
                                     {item.title}
                                 </p>
                             </div>

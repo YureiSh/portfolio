@@ -2,7 +2,7 @@
 
 body,
 html {
-    background-color: #FAF7F2;
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,8 +27,6 @@ html {
 :root {
     font-family: "Inter", sans-serif;
 }
-
-@import "tailwindcss";
 
 @theme {
     --color-hero-white: #FFFFFF;
@@ -72,9 +70,9 @@ html {
 }
 
 .dark {
-    --color-hero-blue:#c8f06a;
-    --color-hero-white:#252128;
-    --color-hero-yrm:#FFFFFF;
-    --color-hero-blue-nec:#171043;
-    --color-hero-lime-nec: #1A210B;
+  --color-hero-blue:#c8f06a;
+  --color-hero-white:#252128;
+  --color-hero-yrm:#FFFFFF;
+  --color-hero-blue-nec:#171043;
+  --color-hero-lime-nec: #1A210B;
 }

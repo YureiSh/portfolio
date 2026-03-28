@@ -5,11 +5,17 @@ import Profile from './components/Profile'
 import Projects from './components/Projects'
 import Contacts from './components/Contacts'
 import useLocalStorage from './hooks/useLocalStorage'
+
 import { ThemeContext } from './contexts/ThemeContext'
 import { LanguageContext } from './contexts/LanguageContext'
 import { useEffect, useState } from 'react'
 import { textData } from './textData'
+import { ScrollTrigger } from 'gsap/all'
+import { gsap } from 'gsap'
+
 import axios from 'axios'
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const [darkMode, setDarkMode] = useLocalStorage('s11d3', false);
